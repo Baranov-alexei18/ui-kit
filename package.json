@@ -1,6 +1,6 @@
 {
   "name": "@alexeika/client-blog-ui-kit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "UI-kit",
   "main": "dist/bundle.js",
   "author": {
@@ -14,7 +14,7 @@
     "build-storybook": "storybook build",
     "lint": "eslint . --fix",
     "commit": "cz",
-    "chromatic": "npx chromatic --project-token=chpt_08cf8ffb04bab26"
+    "chromatic": "npx chromatic --project-token=chpt_b60d0698335d7da"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.24.1",

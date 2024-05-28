@@ -36,11 +36,9 @@ export default {
       }],
     }),
     resolve(),
-    svgr(),
     alias({
       entries: [
         { find: '@', replacement: path.resolve(__dirname, 'src') },
-        { find: '#', replacement: path.resolve(__dirname, '/') },
       ],
     }),
     del({ targets: 'dist/*' }),
@@ -56,6 +54,7 @@ export default {
     typescript(),
     commonjs(),
     dotenv,
+    svgr(),
     url({ include: ['**/*.svg'], limit: Infinity }),
   ],
 };
