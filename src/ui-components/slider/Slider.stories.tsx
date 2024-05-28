@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 
 import { Slider } from '.';
 
-import styles from './styles.module.scss'
-
 import '../../theme/globals.scss';
+import styles from './styles.module.scss';
 
 export default {
   title: 'UI/Slider',
@@ -18,7 +17,11 @@ export default {
   },
 } as Meta<typeof Slider>;
 
-const Template: StoryFn<typeof Slider> = (args) => <div className={styles.wrapperStory}><Slider {...args} /></div>;
+const Template: StoryFn<typeof Slider> = (args) => (
+  <div className={styles.wrapperStory}>
+    <Slider {...args} />
+  </div>
+);
 
 export const Default = Template.bind({});
 Default.args = {

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 
+import { ButtonType } from './types';
 import { ButtonApp } from '.';
 
-import { ButtonType } from './types';
-
-import '../../theme/globals.scss'
+import '../../theme/globals.scss';
 
 const meta: Meta<typeof ButtonApp> = {
   title: 'UI/ButtonApp',

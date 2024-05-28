@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
 import { SliderDataType } from './types';
-import LeftArrow from '#/public/image/svg/arrow-left.svg'
-import RightArrow from '#/public/image/svg/arrow-right.svg'
 
 import styles from './styles.module.scss';
+
+import LeftArrow from '#/public/image/svg/arrow-left.svg';
+import RightArrow from '#/public/image/svg/arrow-right.svg';
 
 const ANIMATION_DURING = 300;
 

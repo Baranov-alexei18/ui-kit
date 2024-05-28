@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 
+import { ButtonApp } from '../button';
+
 import { Toast } from '.';
 
-
 import '../../theme/globals.scss';
-import { ButtonApp } from '../button';
 
 export default {
   title: 'UI/Toast',
@@ -20,7 +20,6 @@ export default {
   },
 } as Meta<typeof Toast>;
 
-
 const Template: StoryFn<typeof Toast> = (args) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -34,7 +33,7 @@ const Template: StoryFn<typeof Toast> = (args) => {
   return (
     <div>
       {isVisible && <Toast {...args} onClose={handleClose} />}
-      <ButtonApp backgroundColor='var(--color-yellow)' onClick={() => setIsVisible(true)}>Show Toast</ButtonApp>
+      <ButtonApp backgroundColor="var(--color-yellow)" onClick={() => setIsVisible(true)}>Show Toast</ButtonApp>
     </div>
   );
 };

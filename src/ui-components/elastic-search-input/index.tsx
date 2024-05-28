@@ -52,7 +52,7 @@ export const ElasticSearch = (
         onChange={handleChange}
         className={styles.input}
       />
-      <button className={styles.button} onClick={handleSearch}>Search</button>
+      <button type="button" className={styles.button} onClick={handleSearch}>Search</button>
       {showResult && query && (
         <div className={styles.results}>
           {isSearching ? (

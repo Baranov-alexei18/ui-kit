@@ -3,8 +3,8 @@ import { Meta, StoryFn } from '@storybook/react';
 
 import { InputApp } from '.';
 
-import styles from './styles.module.scss';
 import '../../theme/globals.scss';
+import styles from './styles.module.scss';
 
 export default {
   title: 'UI/InputApp',
@@ -24,7 +24,8 @@ const Template: StoryFn<typeof InputApp> = (args) => {
   const [value, setValue] = useState(args.value || '');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value);
+    const { value } = e.target;
+    setValue(value);
     if (args.onChange) {
       args.onChange(e);
     }

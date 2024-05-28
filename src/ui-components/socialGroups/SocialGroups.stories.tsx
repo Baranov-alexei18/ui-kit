@@ -1,15 +1,14 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 
-import Facebook from '#/public/image/svg/facebook.svg'
-import Instagramm from '#/public/image/svg/instagramm.svg'
-import LinkedIn from '#/public/image/svg/linkedIn.svg'
-import Twitter from '#/public/image/svg/twitter.svg'
-
 import { SocialGroups } from '.';
 
-
 import '../../theme/globals.scss';
+
+import Facebook from '#/public/image/svg/facebook.svg';
+import Instagramm from '#/public/image/svg/instagramm.svg';
+import LinkedIn from '#/public/image/svg/linkedIn.svg';
+import Twitter from '#/public/image/svg/twitter.svg';
 
 export default {
   title: 'UI/SocialGroups',

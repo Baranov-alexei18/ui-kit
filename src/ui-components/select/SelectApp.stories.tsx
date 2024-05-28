@@ -3,7 +3,6 @@ import { Meta, StoryFn } from '@storybook/react';
 
 import { SelectApp } from '.';
 
-
 import '../../theme/globals.scss';
 
 export default {
@@ -18,7 +17,6 @@ export default {
     children: { control: 'object' },
   },
 } as Meta<typeof SelectApp>;
-
 
 const Template: StoryFn<typeof SelectApp> = (args) => {
   const [value, setValue] = useState(args.value || '');

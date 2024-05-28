@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import { ButtonApp } from '../button';
+
 import { ModalProps } from './types';
 
 import styles from './styles.module.scss';

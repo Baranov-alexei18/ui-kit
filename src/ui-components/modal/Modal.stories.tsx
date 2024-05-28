@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 
-import { BaseModal } from '.';
-
 import { ButtonApp } from '../button';
+
+import { BaseModal } from '.';
 
 import '../../theme/globals.scss';
 
