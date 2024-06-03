@@ -13,6 +13,8 @@ import postcss from 'rollup-plugin-postcss';
 import styles from 'rollup-plugin-styles';
 import { terser } from 'rollup-plugin-terser';
 
+import removeDataTestId from './plugins/removeAttribute';
+
 export default {
   input: 'src/index.ts',
   output: {
@@ -56,5 +58,6 @@ export default {
     dotenv,
     svgr(),
     url({ include: ['**/*.svg'], limit: Infinity }),
+    removeDataTestId(),
   ],
 };
